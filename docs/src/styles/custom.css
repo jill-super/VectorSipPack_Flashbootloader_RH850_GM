@@ -1,0 +1,29 @@
+/* Starlight custom overrides: keep default theme, widen content slightly. */
+:root {
+  --sl-content-width: 52rem;
+}
+
+/* Origin badges used across module pages */
+.origin-vector,
+.origin-custom,
+.origin-thirdparty {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+.origin-vector {
+  background: #e11d48;
+  color: #fff;
+}
+.origin-custom {
+  background: #15803d;
+  color: #fff;
+}
+.origin-thirdparty {
+  background: #b45309;
+  color: #fff;
+}

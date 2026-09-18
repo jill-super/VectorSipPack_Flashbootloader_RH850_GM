@@ -1,0 +1,7 @@
+# Build / tooling artefacts (keep the SIP tree clean)
+docs/node_modules/
+docs/dist/
+docs/.astro/
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,51 @@
+MIT License
+
+Copyright (c) 2017 Contributors to this repository
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-party and proprietary components
+
+This repository is a Vector Software Integration Package (SIP) delivery
+(serial CBD1500635, GM SLP6 / Renesas RH850). Many files carry their own
+copyright and license headers which take precedence over the MIT license
+above for those files. In particular:
+
+- Files with `Copyright (c) ... Vector Informatik GmbH` headers remain
+  proprietary to Vector Informatik GmbH / Vector CANtech, Inc. and are
+  licensed only under the Vector license conditions referenced in those
+  headers and in the delivery addendum
+  (`Doc/DeliveryInformation/2493.2_ADD_Nexteer_FBL_GM_SLP6_Renesas RH850-CBD1500635.D03.pdf`).
+- `BSW/Flash/FlashLib/*` (Renesas FCL) remains under the Renesas disclaimer
+  in `r_fcl.h` (use only with Renesas products, provided "AS IS").
+- `BSW/SecMod/act*.c|h` implement the cryptovision `actCLibrary` and carry
+  cryptovision GmbH copyright notices.
+- `MakeSupport/cmd/*` GNU/Cygwin utilities remain under GPL/LGPL as shipped
+  (`GPL_ENGLISH.txt`, `GPL_GERMAN.txt`, `GNU_LGPL_v3.0.html`, `CYGWIN_LICENSE.txt`).
+- `Misc/HexView/*` remains under the Vector HexView license (`license.liz`)
+  and disclaimer (`disclaimer.txt`).
+- Demo RSA keys in `Misc/DemoKey_2048/rsakeys_2048.txt` are demo keys only
+  and must not be used in production.
+
+The MIT license above applies to the documentation, build glue, and
+integration artefacts created in this repository (notably `README.md`,
+`docs/`, `.github/`), and to any file that does not carry a conflicting
+copyright/license header. When in doubt, the header inside the file wins.
